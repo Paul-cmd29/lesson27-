@@ -10,7 +10,7 @@ CREATE TABLE PersonsNew
 	PhoneNumber VARCHAR(20) UNIQUE,
 	Email VARCHAR(20) UNIQUE,
 )
-
+--Id should be assigned as PRIMARY KEY
 ALTER TABLE PersonsNew 
 ADD Gender NVARCHAR(200);
 SELECT * FROM PersonsNew
@@ -34,3 +34,5 @@ SELECT COUNT(*) FROM PersonsNew
 SELECT Age, COUNT(*) As AgeGroupBy
 FROM PersonsNew
 GROUP BY Age
+
+--checked
